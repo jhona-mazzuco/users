@@ -1,0 +1,89 @@
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">{{ user?.name }}</h3>
+  </div>
+
+  <div class="card-body">
+    <h5 class="card-subtitle">Details</h5>
+
+    <hr />
+
+    <div class="row">
+      <div class="col">
+        <label class="font-weight-bold">Username:</label>
+        <p>{{user?.username}}</p>
+      </div>
+
+      <div class="col">
+        <label class="font-weight-bold">Email:</label>
+        <p>{{user?.email}}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label class="font-weight-bold">Phone:</label>
+        <p>{{user?.phone}}</p>
+      </div>
+
+      <div class="col">
+        <label class="font-weight-bold">Website:</label>
+        <p>
+          <a class="text-primary" (click)="openWebsite()">{{user?.website}}</a>
+        </p>
+      </div>
+    </div>
+
+    <h5 class="card-subtitle mt-2">Address</h5>
+
+    <hr />
+
+    <div class="row">
+      <div class="col">
+        <label class="font-weight-bold">City:</label>
+        <p>{{user?.address?.city}}</p>
+      </div>
+
+      <div class="col">
+        <label class="font-weight-bold">Street:</label>
+        <p>{{ user?.address?.street }}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label class="font-weight-bold">Suite:</label>
+        <p>{{user?.address?.suite}}</p>
+      </div>
+
+      <div class="col">
+        <label class="font-weight-bold">Zip Code:</label>
+        <p>{{user?.address?.zipcode}}</p>
+      </div>
+    </div>
+
+    <h5 class="card-subtitle mt-2">Company</h5>
+
+    <hr />
+
+    <div class="row">
+      <div class="col">
+        <label class="font-weight-bold">Suite:</label>
+        <p>{{user?.company?.name}}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label class="font-weight-bold">Suite:</label>
+        <p>{{user?.company?.bs}}</p>
+      </div>
+
+      <div class="col">
+        <label class="font-weight-bold">Zip Code:</label>
+        <p>{{user?.company?.catchPhrase}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
